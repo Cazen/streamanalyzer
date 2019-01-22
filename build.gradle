@@ -50,7 +50,7 @@ dependencyManagement {
 defaultTasks 'bootRun'
 
 group = 'com.skt.datalabs.sa'
-version = '0.0.1-SNAPSHOT'
+version = '0.1.0-SNAPSHOT'
 
 description = ''
 
