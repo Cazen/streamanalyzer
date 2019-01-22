@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.skt.datalabs.sa"
+        },
+        "jhipsterVersion": "5.7.2",
+        "applicationType": "monolith",
+        "baseName": "StreamAnalyzer",
+        "packageName": "com.skt.datalabs.sa",
+        "packageFolder": "com/skt/datalabs/sa",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mariadb",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "gradle",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "YTJkMjgwNzAwZjA5NmVmMzkzMzIyNTFkZDYwNmJkYmJiZDljYTZhOWJlYzE3MzgwMzMzYzM5ZjQyZTZiOGYwNDM4ODE1NDU2OTQ4ZTI3YWNhNTJmNWM5MDY3M2M2NzIwNDQwODU2NzhkNThkMDYzNjBkNzNmOWNjYzM5NmE4OWE=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "otherModules": [
+            {
+                "name": "generator-jhipster-docker",
+                "version": "2.5.0"
+            }
+        ],
+        "enableTranslation": false
+    }
+}
