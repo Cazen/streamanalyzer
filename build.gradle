@@ -209,6 +209,9 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-aop"
     compile "org.springframework.boot:spring-boot-starter-data-jpa"
     compile "org.springframework.boot:spring-boot-starter-security"
+    compile "org.springframework.cloud:spring-cloud-stream"
+    compile "org.springframework.cloud:spring-cloud-stream-binder-kafka"
+    compile "org.springframework.kafka:spring-kafka"
     compile ("org.springframework.boot:spring-boot-starter-web") {
         exclude module: 'spring-boot-starter-tomcat'
     }
@@ -247,6 +250,7 @@ dependencies {
     testCompile "org.hamcrest:hamcrest-library"
     testCompile "com.h2database:h2"
     liquibaseRuntime "com.h2database:h2"
+    testCompile "org.springframework.cloud:spring-cloud-stream-test-support"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 

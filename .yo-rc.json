@@ -17,7 +17,7 @@
         "devDatabaseType": "h2Disk",
         "prodDatabaseType": "mariadb",
         "searchEngine": false,
-        "messageBroker": false,
+        "messageBroker": "kafka",
         "serviceDiscoveryType": false,
         "buildTool": "gradle",
         "enableSwaggerCodegen": false,
