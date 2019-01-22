@@ -33,6 +33,16 @@
                 "version": "2.5.0"
             }
         ],
-        "enableTranslation": false
+        "enableTranslation": false,
+        "appsFolders": ["stream-analyzer"],
+        "directoryPath": "../",
+        "dockerRepositoryName": "streamanalyzer/applicationmanager",
+        "dockerPushCommand": "docker push",
+        "kubernetesNamespace": "stream-analyzer",
+        "kubernetesServiceType": "Ingress",
+        "ingressDomain": "am.stream-analyzer.pod",
+        "monitoring": "prometheus",
+        "istio": "no",
+        "istioRoute": false
     }
 }

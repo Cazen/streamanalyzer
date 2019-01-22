@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: streamanalyzer-mariadb
+  namespace: stream-analyzer
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: streamanalyzer-mariadb
+    spec:
+      volumes:
+      - name: data
+        emptyDir: {}
+      containers:
+      - name: mariadb
+        image: mariadb:10.3.7
+        env:
+        - name: MYSQL_USER
+          value: root
+        - name: MYSQL_ALLOW_EMPTY_PASSWORD
+          value: 'yes'
+        - name: MYSQL_DATABASE
+          value: streamanalyzer
+#        command:
+#        - mysqld
+#        - --lower_case_table_names=1
+#        - --skip-ssl
+#        - --character_set_server=utf8mb4
+#        - --explicit_defaults_for_timestamp
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/mysql/
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamanalyzer-mariadb
+  namespace: stream-analyzer
+spec:
+  selector:
+    app: streamanalyzer-mariadb
+  ports:
+  - port: 3306
