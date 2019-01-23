@@ -1,14 +1,14 @@
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: streamanalyzer-app
-  namespace: stream-analyzer
-  labels:
-    team: stream-analyzer
-spec:
-  selector:
-    matchLabels:
-      app: streamanalyzer
-  endpoints:
-  - port: web
-    path: /prometheusMetrics
+#apiVersion: monitoring.coreos.com/v1
+#kind: ServiceMonitor
+#metadata:
+#  name: streamanalyzer-app
+#  namespace: stream-analyzer
+#  labels:
+#    team: stream-analyzer
+#spec:
+#  selector:
+#    matchLabels:
+#      app: streamanalyzer
+#  endpoints:
+#  - port: web
+#    path: /prometheusMetrics
