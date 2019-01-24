@@ -15,9 +15,9 @@
 
 logging:
     level:
-        ROOT: INFO
-        com.skt.datalabs.sa: INFO
-        io.github.jhipster: INFO
+        ROOT: DEBUG
+        com.skt.datalabs.sa: DEBUG
+        io.github.jhipster: DEBUG
 
 spring:
     devtools:

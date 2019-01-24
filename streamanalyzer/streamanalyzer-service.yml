@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     app: streamanalyzer
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - name: http
     port: 8080

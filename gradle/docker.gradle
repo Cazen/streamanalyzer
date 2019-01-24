@@ -11,7 +11,7 @@ apply plugin: com.google.cloud.tools.jib.gradle.JibPlugin
 
 jib {
     from {
-        image = 'openjdk:8-jre-alpine'
+        image = 'metatronx/base'
     }
     to {
         image = 'streamanalyzer:latest'
