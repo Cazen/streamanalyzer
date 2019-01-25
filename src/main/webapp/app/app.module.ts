@@ -17,6 +17,8 @@ import { StreamAnalyzerAppRoutingModule } from './app-routing.module';
 import { StreamAnalyzerHomeModule } from './home/home.module';
 import { StreamAnalyzerAccountModule } from './account/account.module';
 import { StreamAnalyzerEntityModule } from './entities/entity.module';
+import { K8SClusterManagementModule } from './k8scluster/k8s.module';
+import { FlinkJobManagementModule } from './flink/flink.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
@@ -35,6 +37,8 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         StreamAnalyzerCoreModule,
         StreamAnalyzerHomeModule,
         StreamAnalyzerAccountModule,
+        K8SClusterManagementModule,
+        FlinkJobManagementModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
         StreamAnalyzerEntityModule
     ],

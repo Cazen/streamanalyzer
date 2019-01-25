@@ -1,13 +1,13 @@
 {
     "generator-jhipster": {
         "promptValues": {
-            "packageName": "com.skt.datalabs.sa"
+            "packageName": "app.metatron.streamanalyzer"
         },
         "jhipsterVersion": "5.7.2",
         "applicationType": "monolith",
         "baseName": "StreamAnalyzer",
-        "packageName": "com.skt.datalabs.sa",
-        "packageFolder": "com/skt/datalabs/sa",
+        "packageName": "app.metatron.streamanalyzer",
+        "packageFolder": "app/metatron/streamanalyzer",
         "serverPort": "8080",
         "authenticationType": "jwt",
         "cacheProvider": "ehcache",

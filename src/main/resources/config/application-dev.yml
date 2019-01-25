@@ -17,7 +17,7 @@ logging:
     level:
         ROOT: DEBUG
         io.github.jhipster: DEBUG
-        com.skt.datalabs.sa: DEBUG
+        app.metatron.streamanalyzer: DEBUG
 
 spring:
     profiles:

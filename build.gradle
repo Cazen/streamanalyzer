@@ -49,13 +49,13 @@ dependencyManagement {
 
 defaultTasks 'bootRun'
 
-group = 'com.skt.datalabs.sa'
+group = 'app.metatron.streamanalyzer'
 version = '0.1.0-SNAPSHOT'
 
 description = ''
 
 bootWar {
-   mainClassName = 'com.skt.datalabs.sa.StreamAnalyzerApp'
+   mainClassName = 'app.metatron.streamanalyzer.StreamAnalyzerApp'
 }
 
 war {
@@ -65,7 +65,7 @@ war {
 }
 
 springBoot {
-    mainClassName = 'com.skt.datalabs.sa.StreamAnalyzerApp'
+    mainClassName = 'app.metatron.streamanalyzer.StreamAnalyzerApp'
     buildInfo()
 }
 
@@ -142,7 +142,7 @@ liquibase {
             username 'StreamAnalyzer'
             password ''
             changeLogFile project.ext.diffChangelogFile
-            referenceUrl 'hibernate:spring:com.skt.datalabs.sa.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy'
+            referenceUrl 'hibernate:spring:app.metatron.streamanalyzer.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy'
             defaultSchemaName ''
             logLevel 'debug'
             classpath "$buildDir/classes/java/main"
